@@ -36,8 +36,9 @@ This is a Flask-based API for managing survey questions. It uses SQLite as its d
 
 ### Local Development
 
-Backend:
+```sh
 cd python-flask-api
+```
 
 1. Start in venv:
 
@@ -77,7 +78,8 @@ This will start the application on port 8000.
 
 ### Local Development
 
-Frontend:
+```sh
 cd ../career-preference
-
-1. run `npm i` then `npm run dev`
+npm install
+npm run dev
+```
