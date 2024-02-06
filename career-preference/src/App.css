@@ -1,0 +1,20 @@
+/* styles for the container */
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem;
+
+  @media (max-width: 640px) {
+    padding: 2rem;
+    height: auto;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
