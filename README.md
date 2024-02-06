@@ -10,11 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 The project is built with React + TypeScript + Vite for the frontend and Python + Flask for the backend and SQLite for the database. The frontend and backend can be deployed to a Docker container.
 
-Packages used:
-
-- `react-router-dom` - For page routes
-- `Tailwind CSS + daisyUI` - CSS framework
-
 ## Backend using Python Flask
 
 This is a Flask-based API for managing survey questions. It uses SQLite as its database.
