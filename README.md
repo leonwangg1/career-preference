@@ -20,7 +20,7 @@ This is a Flask-based API for managing survey questions. It uses SQLite as its d
 - `requirements.txt`: Contains the Python dependencies that your project needs.
 - `Dockerfile`: Used to containerize the application.
 
-### Database ERD 
+### Database ERD
 
 ![image](https://github.com/leonwangg1/career-preference/assets/62505788/abad6f74-f6ea-4ff2-b381-c930ee298dc9)
 
@@ -33,8 +33,11 @@ cd python-flask-api
 1. Start in venv:
 
 ```sh
-python -m venv && source venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 ```
+
+Use `deactivate` to deactive the current virtual environment.
 
 2. Install the required Python packages:
 
@@ -45,7 +48,7 @@ pip install -r requirements.txt
 3. Run the application:
 
 ```sh
-python app.py
+python app.py or flask run
 ```
 
 ### Setup and Running the Project (with Docker)
@@ -65,6 +68,8 @@ docker run --rm -it -p 8000:8000 flask-api
 This will start the application on port 8000.
 
 ## Frontend with Vite+React+Typescript
+
+To allow React app (served from different port) be able to make requests to the Flask server without running into CORS issues, the `CORS(app)` part in app.py is crucial for development environments.
 
 ### Local Development
 

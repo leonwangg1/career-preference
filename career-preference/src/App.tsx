@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import { Survey } from "./pages/Survey";
+import { Survey } from "./pages/Personal";
 import "./App.css";
 
 const Welcome = lazy(async () => import("./pages/Welcome"));

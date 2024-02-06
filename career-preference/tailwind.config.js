@@ -14,14 +14,18 @@ export default {
     },
   },
   plugins: [
-    "daisyui",
+    // eslint-disable-next-line no-undef
+    require("daisyui"),
     function ({ addComponents }) {
       const newComponents = {
-        ".btn": {
+        ".btnNav": {
           "@apply bg-[#0aa1ff] text-white text-sm": {},
         },
       };
       addComponents(newComponents);
     },
   ],
+  daisyui: {
+    themes: ["emerald"],
+  },
 };

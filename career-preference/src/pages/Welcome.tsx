@@ -1,6 +1,5 @@
-import { SVGProps } from "react";
-import { JSX } from "react/jsx-runtime";
 import { Link } from "react-router-dom";
+import { TriangleIcon } from "../components/Icon";
 
 export default function Welcome() {
   return (
@@ -8,15 +7,13 @@ export default function Welcome() {
       <div className="bg-[#e8edef] p-6 rounded-lg shadow-xl w-full">
         <div className="flex flex-col items-center justify-between border-b border-gray-300 pb-4">
           <TriangleIcon className="text-[#4bb5f7] text-3xl mb-2" />
-          <h1 className="text-lg font-semibold text-center flex-1 ml-4">
+          <h1 className="text-xl font-semibold text-center flex-1 ml-4">
             Land Engineering Agency Career Preference Tool
           </h1>
         </div>
         <div className="container-body px-2 text-pretty">
           <div className="mt-6 text-left">
-            <h1 className="text-xl md:text-2xl font-semibold">
-              Privacy Statement
-            </h1>
+            <h1 className="text-l font-semibold">Privacy Statement</h1>
             <p className="mt-3 text-sm">
               All data collected as part of LEA Career Preference Tool will be
               securely stored in the CIOG Central Data Centre in Fyshwick ACT.
@@ -30,10 +27,10 @@ export default function Welcome() {
             </p>
           </div>
           <div className="mt-3 text-left">
-            <h1 className="text-xl md:text-2xl font-semibold">
+            <h1 className="text-l font-semibold">
               What information will be collected?
             </h1>
-            <p className="mt-3 text-sm ">
+            <p className="mt-3 text-sm">
               The purpose of Land Engineering Agency Career Preference tool is
               to gain an understanding of your current skills, knowledge and
               experience and your future career preferences Participation is
@@ -52,35 +49,12 @@ export default function Welcome() {
             </p>
           </div>
           <div className="mt-6 flex justify-center">
-            <button className="btn">
-              <Link to={`/survey`} className="text-white">
-                Accept & Proceed
-              </Link>
-            </button>
+            <Link to={`/survey`} className="text-white">
+              <button className="btnNav">Accept & Proceed</button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  );
-}
-
-function TriangleIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="60"
-      height="60"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
-    </svg>
   );
 }
