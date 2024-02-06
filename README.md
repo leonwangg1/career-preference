@@ -27,7 +27,7 @@ This is a Flask-based API for managing survey questions. It uses SQLite as its d
 
 ### Database ERD 
 
-https://github.com/leonwangg1/career-preference/blob/main/erd.png?raw=true![image](https://github.com/leonwangg1/career-preference/assets/62505788/abad6f74-f6ea-4ff2-b381-c930ee298dc9)
+![image](https://github.com/leonwangg1/career-preference/assets/62505788/abad6f74-f6ea-4ff2-b381-c930ee298dc9)
 
 ### Local Development
 
