@@ -25,14 +25,9 @@ This is a Flask-based API for managing survey questions. It uses SQLite as its d
 - `requirements.txt`: Contains the Python dependencies that your project needs.
 - `Dockerfile`: Used to containerize the application.
 
-### API Endpoints
+### Database ERD 
 
-- `GET /mission_capabilities`: Retrieves all mission capabilities.
-- `GET /mission_capabilities/question/<int:id>`: Retrieves the mission capability with the given ID.
-- `GET /fitment_questions`: Retrieves all questions where 'FitmentQuestion' is 'Yes'.
-- `GET /questions/parent/<int:parent_id>`: Retrieves a parent question.
-- `GET /questions/parent_id/<string:parent_text>`: Retrieves a prent question's `ParentID`
-- `GET /questions/children/<int:parent_id>`: Retrieves all subquestion fom a parent question.
+https://github.com/leonwangg1/career-preference/blob/main/erd.png?raw=true![image](https://github.com/leonwangg1/career-preference/assets/62505788/abad6f74-f6ea-4ff2-b381-c930ee298dc9)
 
 ### Local Development
 
