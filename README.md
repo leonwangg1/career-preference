@@ -24,7 +24,7 @@ This is a Flask-based API for managing survey questions. It uses SQLite as its d
 
 ![image](https://github.com/leonwangg1/career-preference/assets/62505788/abad6f74-f6ea-4ff2-b381-c930ee298dc9)
 
-### Local Development
+### 1. Local Development
 
 ```sh
 cd python-flask-api
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 python app.py or flask run
 ```
 
-### Setup and Running the Project (with Docker)
+### 2. Setup and Running the Project (with Docker)
 
 To build a Docker image of the application, run:
 
@@ -62,10 +62,10 @@ docker build -t flask-api .
 To run the application in a Docker container, run:
 
 ```sh
-docker run --rm -it -p 8000:8000 flask-api
+docker run --rm -it -p 5000:5000 flask-api
 ```
 
-This will start the application on port 8000.
+This will start the application on port 5000.
 
 ## Frontend with Vite+React+Typescript
 

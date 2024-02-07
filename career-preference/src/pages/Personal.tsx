@@ -63,10 +63,18 @@ export function Survey() {
                       )
                       .map((filteredQuestion) => (
                         <div key={filteredQuestion.QUESTION_ID}>
-                          <p className="mt-2">{filteredQuestion.FIELD_LABEL}</p>
+                          <p className="mt-2">
+                            {filteredQuestion.FIELD_LABEL}
+                            {filteredQuestion.REQUIRED === 1 ? (
+                              <span className="text-red-700">*</span>
+                            ) : null}
+                          </p>
                           {/* Render input based on FIELD_TYPE */}
                           {filteredQuestion.FIELD_TYPE === "freetext" ? (
-                            <Input placeholder={filteredQuestion.PLACEHOLDER} />
+                            <Input
+                              placeholder={filteredQuestion.PLACEHOLDER}
+                              limit={filteredQuestion.INPUT_LIMIT}
+                            />
                           ) : (
                             filteredQuestion.FIELD_TYPE === "single_select" && (
                               <Select
