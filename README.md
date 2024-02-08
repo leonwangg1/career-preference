@@ -71,10 +71,17 @@ This will start the application on port 5000.
 
 To allow React app (served from different port) be able to make requests to the Flask server without running into CORS issues, the `CORS(app)` part in app.py is crucial for development environments.
 
-### Local Development
+### 1. Local Development
 
 ```sh
 cd ../career-preference
 npm install
 npm run dev
+```
+
+### 2. Docker Development
+
+```sh
+docker build . -t leacareer
+docker run --rm -it -p 8000:80 leacareer
 ```

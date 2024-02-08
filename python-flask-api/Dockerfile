@@ -1,5 +1,5 @@
 # Use an official Python runtime as the base image
-FROM python:3.8
+FROM python:3.11.7
 
 # Set the working directory in the container to /app (creates dir named app for the container)
 WORKDIR /app
@@ -17,5 +17,5 @@ ENV FLASK_APP="app.py"
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
-# Run the application on port 8000 when the container launches
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000"]
+# Run the application on port 5000 when the container launches
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000"]
